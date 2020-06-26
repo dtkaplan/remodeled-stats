@@ -1,0 +1,32 @@
+[
+  {
+    "path": "posts/2020-06-22-ASA-AMATYC/",
+    "title": "Multiple vars, one method, no login",
+    "description": "A presentation at the ASA/AMATYC Virtual Workshop June 29-30. With one eye to the needs of next semester, meet the StatPREP Little Apps which use real, rich, multivariate data while fitting easily into an existing curriculum regardless of course text. And with the other eye on the \"big picture,\" learn how inference can be done with two formulas and the magic number 2².",
+    "author": [
+      {
+        "name": "Daniel Kaplan",
+        "url": "https://dtkaplan.github.io"
+      }
+    ],
+    "date": "2020-06-29",
+    "categories": [],
+    "preview": "posts/2020-06-22-ASA-AMATYC/births78.png",
+    "last_modified": "2020-06-23T08:27:33-05:00"
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to My Blog",
+    "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Daniel Kaplan",
+        "url": "dtkaplan.github.io"
+      }
+    ],
+    "date": "2020-06-22",
+    "categories": [],
+    "preview": "https://rstudio.github.io/distill/images/javascript-d3-preview.png",
+    "last_modified": "2020-06-26T13:01:45-05:00"
+  }
+]

@@ -1,0 +1,5 @@
+---
+title: "Stat teaching remodeled for data science"
+site: distill::distill_website
+listing: posts
+---

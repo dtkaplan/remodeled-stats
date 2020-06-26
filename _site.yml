@@ -1,0 +1,12 @@
+name: "Remodel_stats"
+title: "Remodeled Stats: Danny Kaplan"
+description: |
+  Ideas and reflections on modernizing intro stats
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
