@@ -198,7 +198,7 @@ I'm going to show you how it works and then you'll be all set up to use it.
 
 ## Part II: One method for everything
 
-[Follow this link](posts/2020-06-28-inferencewithf).
+[Follow this link](../2020-06-28-inferencewithf).
 
 ## Summing up
 
