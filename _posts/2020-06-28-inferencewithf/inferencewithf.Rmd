@@ -33,7 +33,7 @@ suppress_x_axis <- function(P) {
 }
 ```
 
-In [this blog post introducing the regression Little App](posts/2020-01-18-first-day/index.html), we considered the changes in the number of births in the US from day to day. One pattern we observed is that the number of births  is lower on weekends than weekdays. 
+In [this blog post on a first-day-of-class lesson](posts/2020-01-18-first-day/index.html), we considered the changes in the number of births in the US from day to day. One pattern we observed is that the number of births  is lower on weekends than weekdays. 
 
 ```{r echo=FALSE, fig.cap="The graphic from the Little App showing number of births as a function of day of the week."}
 res <- LittleApp2::F_main_calc(births ~ wday, data = Birth_counts)
