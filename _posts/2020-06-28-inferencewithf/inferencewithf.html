@@ -19,366 +19,39 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>Remodeled Stats: Danny Kaplan: Stat teaching remodeled for data science</title>
+  <title>Statistical inference: Is there a discernible pattern?</title>
+
+  <meta property="description" itemprop="description" content="The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell&#39;s drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]"/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-01-19"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-01-19"/>
+  <meta name="article:author" content="Daniel Kaplan"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Remodeled Stats: Danny Kaplan: Stat teaching remodeled for data science"/>
+  <meta property="og:title" content="Statistical inference: Is there a discernible pattern?"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell&#39;s drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Remodeled Stats: Danny Kaplan"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Remodeled Stats: Danny Kaplan: Stat teaching remodeled for data science"/>
+  <meta property="twitter:title" content="Statistical inference: Is there a discernible pattern?"/>
+  <meta property="twitter:description" content="The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell&#39;s drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Stat teaching remodeled for data science"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","preview"]}},"value":[{"type":"character","attributes":{},"value":["Statistical inference: Is there a discernible pattern?"]},{"type":"character","attributes":{},"value":["The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell's drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Daniel Kaplan"]},{"type":"character","attributes":{},"value":["https://dtkaplan.github.io"]}]}]},{"type":"character","attributes":{},"value":["01-19-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["Solomon_Valley_Democrat_Thu__Oct_27__1898_.jpg"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["inferencewithf_files/bowser-1.9.3/bowser.min.js","inferencewithf_files/distill-2.2.21/template.v2.js","inferencewithf_files/figure-html5/unnamed-chunk-1-1.png","inferencewithf_files/figure-html5/unnamed-chunk-2-1.png","inferencewithf_files/figure-html5/unnamed-chunk-5-1.png","inferencewithf_files/figure-html5/unnamed-chunk-6-1.png","inferencewithf_files/header-attrs-2.2/header-attrs.js","inferencewithf_files/jquery-1.11.3/jquery.min.js","inferencewithf_files/webcomponents-2.0.0/webcomponents.js","Solomon_Valley_Democrat_Thu__Oct_27__1898_.jpg"]}
   </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #455a64;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative;}
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  </style>
-
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -1254,416 +927,108 @@
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.2/header-attrs.js"></script>
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="inferencewithf_files/header-attrs-2.2/header-attrs.js"></script>
+  <script src="inferencewithf_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="inferencewithf_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="inferencewithf_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="inferencewithf_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Stat teaching remodeled for data science","authors":[]}
+{"title":"Statistical inference: Is there a discernible pattern?","description":"The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell's drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]","authors":[{"author":"Daniel Kaplan","authorURL":"https://dtkaplan.github.io","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-01-19T00:00:00.000-06:00","citationText":"Kaplan, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Remodeled Stats: Danny Kaplan</a>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-<style type="text/css">
-
-/* Styles for listing layout (hide title) */
-.layout-listing d-title, .layout-listing .d-title {
-  display: none;
-}
-
-/* Styles for posts lists (not auto-injected) */
-
-
-.posts-with-sidebar {
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-.posts-list .description h2,
-.posts-list .description p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.posts-list .description h2 {
-  font-weight: 700;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.posts-list h2.post-tag {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 12px;
-}
-.posts-list {
-  margin-top: 60px;
-  margin-bottom: 24px;
-}
-
-.posts-list .post-preview {
-  text-decoration: none;
-  overflow: hidden;
-  display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 24px 0;
-}
-
-.post-preview-last {
-  border-bottom: none !important;
-}
-
-.posts-list .posts-list-caption {
-  grid-column: screen;
-  font-weight: 400;
-}
-
-.posts-list .post-preview h2 {
-  margin: 0 0 6px 0;
-  line-height: 1.2em;
-  font-style: normal;
-  font-size: 24px;
-}
-
-.posts-list .post-preview p {
-  margin: 0 0 12px 0;
-  line-height: 1.4em;
-  font-size: 16px;
-}
-
-.posts-list .post-preview .thumbnail {
-  box-sizing: border-box;
-  margin-bottom: 24px;
-  position: relative;
-  max-width: 500px;
-}
-.posts-list .post-preview img {
-  width: 100%;
-  display: block;
-}
-
-.posts-list .metadata {
-  font-size: 12px;
-  line-height: 1.4em;
-  margin-bottom: 18px;
-}
-
-.posts-list .metadata > * {
-  display: inline-block;
-}
-
-.posts-list .metadata .publishedDate {
-  margin-right: 1em;
-}
-
-.posts-list .metadata .tags {
-  margin-top: 1em;
-}
-
-.posts-list .tags .tag {
-  color: rgba(0,0,0,0.67);
-  padding: 0.3em 0.5em;
-  margin: 0;
-  font-size: 80%;
-  border: 1px solid rgba(0,0,0,0.4);
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.posts-list img {
-  opacity: 1;
-}
-
-.posts-list img[data-src] {
-  opacity: 0;
-}
-
-.posts-more {
-  clear: both;
-}
-
-
-.posts-sidebar {
-  font-size: 16px;
-}
-
-.posts-sidebar h3 {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.sidebar-section {
-  margin-bottom: 30px;
-}
-
-.categories ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.categories li {
-  color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 0;
-}
-
-.categories li>a {
-  border-bottom: none;
-}
-
-.categories li>a:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.categories .active {
-  font-weight: 600;
-}
-
-.categories .category-count {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-
-@media(min-width: 768px) {
-  .posts-list .post-preview h2 {
-    font-size: 26px;
-  }
-  .posts-list .post-preview .thumbnail {
-    float: right;
-    width: 35%;
-    margin-bottom: 0;
-  }
-  .posts-list .post-preview .description {
-    float: left;
-    width: 45%;
-  }
-  .posts-list .post-preview .metadata {
-    float: left;
-    width: 15%;
-    margin-top: 8px;
-  }
-  .posts-list .post-preview p {
-    margin: 0 0 12px 0;
-    line-height: 1.5em;
-    font-size: 16px;
-  }
-  .posts-with-sidebar .posts-list {
-    float: left;
-    width: 72%;
-  }
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 20%;
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-.downlevel .posts-list .post-preview {
-  color: inherit;
-}
-
-</style>
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace("#", "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if (category == page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption">Stat teaching remodeled for data science</h1>
-<a href="posts/2020-06-22-ASA-AMATYC/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">June 29, 2020</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2020-06-22-ASA-AMATYC/births78.png"/>
-</div>
-<div class="description">
-<h2>Multiple vars, one method, no login</h2>
-<p>A presentation at the ASA/AMATYC Virtual Workshop June 29-30. With one eye to the needs of next semester, meet the StatPREP Little Apps which use real, rich, multivariate data while fitting easily into an existing curriculum regardless of course text. And with the other eye on the "big picture," learn how inference can be done with two formulas and the magic number 2².</p>
-</div>
-</a>
-<a href="posts/2020-06-28-inferencewithf/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 19, 2020</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2020-06-28-inferencewithf/Solomon_Valley_Democrat_Thu__Oct_27__1898_.jpg"/>
-</div>
-<div class="description">
-<h2>Statistical inference: Is there a discernible pattern?</h2>
-<p>The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell's drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]</p>
-</div>
-</a>
-<a href="posts/2020-01-18-first-day/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 18, 2020</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2020-01-18-first-day/daily-births.png"/>
-</div>
-<div class="description">
-<h2>A First-day Challenge</h2>
-<p>Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we'll re-use Randy's challenge to organize a first-day class on the question "What is statistics?"</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Stat teaching remodeled for data science</h1>
-
+<h1>Statistical inference: Is there a discernible pattern?</h1>
+<p><p>The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell’s drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]</p></p>
 </div>
 
+<div class="d-byline">
+  Daniel Kaplan <a href="https://dtkaplan.github.io" class="uri">https://dtkaplan.github.io</a> 
+  
+<br/>01-19-2020
+</div>
 
 <div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="inferencewithf_files/figure-html5/unnamed-chunk-1-1.png" width="624" /></p>
+</div>
+<h2 id="constellations-fog-and-discerning-reality">Constellations, fog, and discerning reality</h2>
+<h2 id="will-my-result-be-reproducible">Will my result be reproducible?</h2>
+<h2 id="quantifying-discernibility">Quantifying discernibility</h2>
+<ol start="5" type="1">
+<li>Is there something about this graphic that <em>explains</em> the bi-modality we saw in the previous graphics?</li>
+</ol>
+<p>[More discussion. Seem obvious that weekends are different from weekday. Less obvious that Sunday and Saturday are different, or that the individual working weekdays are different from one another.]</p>
+<p>Let’s compare Monday through Friday. Here’s the graph, redrawn to exclude the weekends.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="inferencewithf_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
+</div>
+<ol start="6" type="1">
+<li>What do you think: are the weekdays different from one another?</li>
+</ol>
+<p>[Discussion. What if the outlier on Friday had happened on Thursday, etc.]</p>
+<p>Reasonable people can disagree about whether there is a day-to-day pattern in the data. Is seeing differences like seeing animal shapes in clouds. (Hint: Clouds aren’t really animals!) Or is there something we can put our finger on. Said another way: How would you and a person with the opposite opinion try to convince one another? What would cause you to give up your opinion?</p>
+<p>Many tasks in statistics are about not having to rely entirely on personal judgement about whether there is a real pattern. The techniques by which these tasks are accomplished have been worked out over the last century, and are used almost universally in science, commerce, government and any other setting where data is used to draw conclusions.</p>
+<p>We’re going to work through one of the most widely used such techniques, explaining it with reference to a graphic rather than with mathematical algorithms. (We can leave it to the computer to carry out the algorithm precisely, but you’ll see that you get more or less the same answer just by looking at the graph.)</p>
+<p>Here are the steps.</p>
+<p><strong>Step 1</strong>. On the graph, draw a mathematical function that takes day-of-week as the input and puts out a single number which is representative of the data for that day of the week.</p>
+<div class="layout-chunk" data-layout="l-body">
 
+</div>
+<p>Question: You might disagree about the precise position of the bars showing the function output for each day. What would you look for in a “good” position? It happens that statistics has techniques for deciding where to draw the bars that, like the overall method, are universally used.</p>
+<p><strong>Step 2</strong>. Measure how much variation in the response variable there is.</p>
+<p>[This is where we introduce summary intervals and variance.]</p>
+<p><strong>Step 3</strong>. Imagine that each of the actual values in the response variable was replaced by the corresponding model value. That is, imagine what a graph of blue dots would look like if each black dot were moved horizontally down to the corresponding function output value. [An effective way to show this is with one of the StatPREP Little Apps: <a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">here</a>]. Measure how much variation there is among the blue dots.</p>
+<p>The result of Step 3 is the amount of variation that’s <em>explained</em> by the model.</p>
+<p>In understanding Steps 2 and 3, it can help to make a graph on the side, showing the vertical spread of the response variable and of the model values, like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p>[Discussion about the blue dots, the meaning of the bars shown in the right graphic, how to calculate the variance, etc.]</p>
+<p><strong>Step 4</strong>. Now to do some calculations. The quantity we are going to calculate is called F, named after its inventor, Ronald Fisher. He invented it in 1925, an invention that marked the start of the pre-computer modern era in statistics.</p>
+<p>We have some numbers:</p>
+<ul>
+<li>$n=$50</li>
+<li>Variance of the response variable: <span class="math inline">\(v_r\)</span> = <code>fr round(var(Weekdays$births), -3)</code></li>
+<li>Variance of the model values: <span class="math inline">\(v_m\)</span> = <code>fr round(var(fitted(mod)), -3)</code></li>
+</ul>
+<p>In terms of these numbers, F is</p>
+<p><span class="math display">\[\mbox{F} = \frac{n-5}{4}\frac{v_m}{v_r - v_m}\]</span> You would be right to wonder where this formula comes from. What are the 4 and the 5 about? Will it always be 4 and 5 or does it depend on something in the specific situation? Why do we use variance instead of its square root. Why <span class="math inline">\(n-1\)</span> and not <span class="math inline">\(n\)</span>. Why not just use <span class="math inline">\(v_m / v_r\)</span> to simplify things? There are answers to all these questions, those will be clearer when we have the concepts to describe precisely what we mean by a “real” or an “accidental” pattern.</p>
+<p>Still, notice that F is bigger:</p>
+<ul>
+<li>When <span class="math inline">\(n\)</span> is bigger. That is, more data gives bigger F.</li>
+<li>When <span class="math inline">\(v_m\)</span> is bigger. That is, a model that explains more of the variation gives bigger F.</li>
+</ul>
+<p>Plugging in our numbers here:</p>
+<p><span class="math display">\[\mbox{F} = (\frac{50 - 5}{4}) \frac{177000}{398000  - 177000} = 7.8\]</span></p>
+<p>The standard in science is that F &gt; 4 means that you’re entitled to claim that the data point to a day-to-day difference in birth numbers.</p>
+<p>Why 4? Again, we’ll be able to see why 4 was selected as the threshold when we understand precisely what is the difference between a “real” and “accidental” pattern.</p>
+<p><strong>Another example.</strong> [I would interleaf examples stage by stage, leaving the “is the pattern accidental?” question toward the end.]</p>
+<p>There’s an urban legend that pregnant women who are older are more likely to have conceived a boy than younger women. [Notice the conditioning in this statement. It’s only about pregnant women.]</p>
+<p>Let’s go to the data. We’ll use the Centers for Disease Control data on individual births. Here, we have $n=$4,000,000 so we can anticipate that F is likely to be large. But so that you can see the individual dots in the graph, we’ll use a sample of just 1000 births selected at random. Once you feel comfortable with the idea of a function describing the relationship between the response and explanatory variables, we’ll work with larger datasets.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="inferencewithf_files/figure-html5/unnamed-chunk-5-1.png" width="624" /></p>
+</div>
+<p>That’s not a very good graph. Let’s use jittering and transparency?</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="inferencewithf_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
+</div>
+<p>First … there’s nothing obvious. But let’s go through the formalities of the steps to find F. [Discussion about how to draw function and what the output should be.]</p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -1671,6 +1036,15 @@ function init_posts_list() {
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->

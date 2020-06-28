@@ -19,366 +19,39 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>Remodeled Stats: Danny Kaplan: Stat teaching remodeled for data science</title>
+  <title>A First-day Challenge</title>
+
+  <meta property="description" itemprop="description" content="Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we&#39;ll re-use Randy&#39;s challenge to organize a first-day class on the question &quot;What is statistics?&quot;"/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-01-18"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-01-18"/>
+  <meta name="article:author" content="Daniel Kaplan"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Remodeled Stats: Danny Kaplan: Stat teaching remodeled for data science"/>
+  <meta property="og:title" content="A First-day Challenge"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we&#39;ll re-use Randy&#39;s challenge to organize a first-day class on the question &quot;What is statistics?&quot;"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Remodeled Stats: Danny Kaplan"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Remodeled Stats: Danny Kaplan: Stat teaching remodeled for data science"/>
+  <meta property="twitter:title" content="A First-day Challenge"/>
+  <meta property="twitter:description" content="Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we&#39;ll re-use Randy&#39;s challenge to organize a first-day class on the question &quot;What is statistics?&quot;"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Stat teaching remodeled for data science"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","preview"]}},"value":[{"type":"character","attributes":{},"value":["A First-day Challenge"]},{"type":"character","attributes":{},"value":["Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we'll re-use Randy's challenge to organize a first-day class on the question \"What is statistics?\"\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Daniel Kaplan"]},{"type":"character","attributes":{},"value":["https://dtkaplan.github.io"]}]}]},{"type":"character","attributes":{},"value":["01-18-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["daily-births.png"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["daily-births.png","first-day_files/bowser-1.9.3/bowser.min.js","first-day_files/crosstalk-1.1.0.1/css/crosstalk.css","first-day_files/crosstalk-1.1.0.1/js/crosstalk.js","first-day_files/crosstalk-1.1.0.1/js/crosstalk.js.map","first-day_files/crosstalk-1.1.0.1/js/crosstalk.min.js","first-day_files/crosstalk-1.1.0.1/js/crosstalk.min.js.map","first-day_files/datatables-binding-0.12/datatables.js","first-day_files/datatables-css-0.0.0/datatables-crosstalk.css","first-day_files/distill-2.2.21/template.v2.js","first-day_files/dt-core-1.10.20/css/jquery.dataTables.extra.css","first-day_files/dt-core-1.10.20/css/jquery.dataTables.min.css","first-day_files/dt-core-1.10.20/js/jquery.dataTables.min.js","first-day_files/figure-html5/unnamed-chunk-1-1.png","first-day_files/figure-html5/unnamed-chunk-10-1.png","first-day_files/figure-html5/unnamed-chunk-11-1.png","first-day_files/figure-html5/unnamed-chunk-3-1.png","first-day_files/figure-html5/unnamed-chunk-4-1.png","first-day_files/figure-html5/unnamed-chunk-5-1.png","first-day_files/figure-html5/unnamed-chunk-6-1.png","first-day_files/figure-html5/unnamed-chunk-7-1.png","first-day_files/figure-html5/unnamed-chunk-9-1.png","first-day_files/header-attrs-2.2/header-attrs.js","first-day_files/htmlwidgets-1.5.1/htmlwidgets.js","first-day_files/jquery-1.11.3/jquery.min.js","first-day_files/jquery-1.12.4/jquery.min.js","first-day_files/jquery-1.12.4/LICENSE.txt","first-day_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #455a64;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative;}
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  </style>
-
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -1254,416 +927,191 @@
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.2/header-attrs.js"></script>
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="first-day_files/header-attrs-2.2/header-attrs.js"></script>
+  <script src="first-day_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+  <script src="first-day_files/jquery-1.12.4/jquery.min.js"></script>
+  <link href="first-day_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+  <script src="first-day_files/datatables-binding-0.12/datatables.js"></script>
+  <link href="first-day_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="first-day_files/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+  <script src="first-day_files/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+  <link href="first-day_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+  <script src="first-day_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+  <script src="first-day_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="first-day_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="first-day_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Stat teaching remodeled for data science","authors":[]}
+{"title":"A First-day Challenge","description":"Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we'll re-use Randy's challenge to organize a first-day class on the question \"What is statistics?\"","authors":[{"author":"Daniel Kaplan","authorURL":"https://dtkaplan.github.io","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-01-18T00:00:00.000-06:00","citationText":"Kaplan, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Remodeled Stats: Danny Kaplan</a>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-<style type="text/css">
-
-/* Styles for listing layout (hide title) */
-.layout-listing d-title, .layout-listing .d-title {
-  display: none;
-}
-
-/* Styles for posts lists (not auto-injected) */
-
-
-.posts-with-sidebar {
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-.posts-list .description h2,
-.posts-list .description p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.posts-list .description h2 {
-  font-weight: 700;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.posts-list h2.post-tag {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 12px;
-}
-.posts-list {
-  margin-top: 60px;
-  margin-bottom: 24px;
-}
-
-.posts-list .post-preview {
-  text-decoration: none;
-  overflow: hidden;
-  display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 24px 0;
-}
-
-.post-preview-last {
-  border-bottom: none !important;
-}
-
-.posts-list .posts-list-caption {
-  grid-column: screen;
-  font-weight: 400;
-}
-
-.posts-list .post-preview h2 {
-  margin: 0 0 6px 0;
-  line-height: 1.2em;
-  font-style: normal;
-  font-size: 24px;
-}
-
-.posts-list .post-preview p {
-  margin: 0 0 12px 0;
-  line-height: 1.4em;
-  font-size: 16px;
-}
-
-.posts-list .post-preview .thumbnail {
-  box-sizing: border-box;
-  margin-bottom: 24px;
-  position: relative;
-  max-width: 500px;
-}
-.posts-list .post-preview img {
-  width: 100%;
-  display: block;
-}
-
-.posts-list .metadata {
-  font-size: 12px;
-  line-height: 1.4em;
-  margin-bottom: 18px;
-}
-
-.posts-list .metadata > * {
-  display: inline-block;
-}
-
-.posts-list .metadata .publishedDate {
-  margin-right: 1em;
-}
-
-.posts-list .metadata .tags {
-  margin-top: 1em;
-}
-
-.posts-list .tags .tag {
-  color: rgba(0,0,0,0.67);
-  padding: 0.3em 0.5em;
-  margin: 0;
-  font-size: 80%;
-  border: 1px solid rgba(0,0,0,0.4);
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.posts-list img {
-  opacity: 1;
-}
-
-.posts-list img[data-src] {
-  opacity: 0;
-}
-
-.posts-more {
-  clear: both;
-}
-
-
-.posts-sidebar {
-  font-size: 16px;
-}
-
-.posts-sidebar h3 {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.sidebar-section {
-  margin-bottom: 30px;
-}
-
-.categories ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.categories li {
-  color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 0;
-}
-
-.categories li>a {
-  border-bottom: none;
-}
-
-.categories li>a:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.categories .active {
-  font-weight: 600;
-}
-
-.categories .category-count {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-
-@media(min-width: 768px) {
-  .posts-list .post-preview h2 {
-    font-size: 26px;
-  }
-  .posts-list .post-preview .thumbnail {
-    float: right;
-    width: 35%;
-    margin-bottom: 0;
-  }
-  .posts-list .post-preview .description {
-    float: left;
-    width: 45%;
-  }
-  .posts-list .post-preview .metadata {
-    float: left;
-    width: 15%;
-    margin-top: 8px;
-  }
-  .posts-list .post-preview p {
-    margin: 0 0 12px 0;
-    line-height: 1.5em;
-    font-size: 16px;
-  }
-  .posts-with-sidebar .posts-list {
-    float: left;
-    width: 72%;
-  }
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 20%;
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-.downlevel .posts-list .post-preview {
-  color: inherit;
-}
-
-</style>
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace("#", "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if (category == page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption">Stat teaching remodeled for data science</h1>
-<a href="posts/2020-06-22-ASA-AMATYC/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">June 29, 2020</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2020-06-22-ASA-AMATYC/births78.png"/>
-</div>
-<div class="description">
-<h2>Multiple vars, one method, no login</h2>
-<p>A presentation at the ASA/AMATYC Virtual Workshop June 29-30. With one eye to the needs of next semester, meet the StatPREP Little Apps which use real, rich, multivariate data while fitting easily into an existing curriculum regardless of course text. And with the other eye on the "big picture," learn how inference can be done with two formulas and the magic number 2².</p>
-</div>
-</a>
-<a href="posts/2020-06-28-inferencewithf/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 19, 2020</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2020-06-28-inferencewithf/Solomon_Valley_Democrat_Thu__Oct_27__1898_.jpg"/>
-</div>
-<div class="description">
-<h2>Statistical inference: Is there a discernible pattern?</h2>
-<p>The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell's drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]</p>
-</div>
-</a>
-<a href="posts/2020-01-18-first-day/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 18, 2020</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2020-01-18-first-day/daily-births.png"/>
-</div>
-<div class="description">
-<h2>A First-day Challenge</h2>
-<p>Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we'll re-use Randy's challenge to organize a first-day class on the question "What is statistics?"</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Stat teaching remodeled for data science</h1>
-
+<h1>A First-day Challenge</h1>
+<p><p>Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we’ll re-use Randy’s challenge to organize a first-day class on the question “What is statistics?”</p></p>
 </div>
 
+<div class="d-byline">
+  Daniel Kaplan <a href="https://dtkaplan.github.io" class="uri">https://dtkaplan.github.io</a> 
+  
+<br/>01-18-2020
+</div>
 
 <div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
 
+</div>
+<h2 id="welcome-to-stats-101">Welcome to Stats 101</h2>
+<p>The main questions in stats are:</p>
+<ul>
+<li>How do we inform ourselves from data?</li>
+<li>How do we take care that we do not read something into data that isn’t really there?</li>
+</ul>
+<p>Let’s start with some data on the number of births each day in the US.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Here’s what the data look like, shown in standard format for storing data, much like a spreadsheet.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-c913c140ac1b954f7c6d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c913c140ac1b954f7c6d">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"],["2015-11-25","2015-11-09","2015-04-05","2015-07-28","2015-12-17","2015-11-13","2015-11-11","2015-09-03","2015-12-21","2015-05-08","2015-05-11","2015-10-15","2015-01-09","2015-12-18","2015-09-01","2015-06-08","2015-11-12","2015-12-29","2015-02-28","2015-01-14","2015-07-23","2015-04-07","2015-02-14","2015-12-16","2015-08-28","2015-04-27","2015-10-25","2015-07-11","2015-10-26","2015-07-08","2015-12-26","2015-09-02","2015-03-26","2015-03-13","2015-10-03","2015-01-06","2015-06-16","2015-01-10","2015-07-21","2015-08-05","2015-06-03","2015-05-17","2015-02-06","2015-03-22","2015-10-27","2015-08-15","2015-01-26","2015-12-19","2015-09-10","2015-01-03"],[11745,11688,6821,13240,12339,11643,12311,12839,12692,11810,11549,12522,11868,12247,13231,11938,12329,13458,7989,12013,12852,12334,8390,12282,12719,11494,7288,8769,11923,12788,7294,12799,12065,10940,8579,12425,12400,8014,13264,12793,11890,7354,11656,7171,12485,8938,11728,8368,13925,8328],["Wed","Mon","Sun","Tue","Thu","Fri","Wed","Thu","Mon","Fri","Mon","Thu","Fri","Fri","Tue","Mon","Thu","Tue","Sat","Wed","Thu","Tue","Sat","Wed","Fri","Mon","Sun","Sat","Mon","Wed","Sat","Wed","Thu","Fri","Sat","Tue","Tue","Sat","Tue","Wed","Wed","Sun","Fri","Sun","Tue","Sat","Mon","Sat","Thu","Sat"],[2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015,2015],[11,11,4,7,12,11,11,9,12,5,5,10,1,12,9,6,11,12,2,1,7,4,2,12,8,4,10,7,10,7,12,9,3,3,10,1,6,1,7,8,6,5,2,3,10,8,1,12,9,1],[329,313,95,209,351,317,315,246,355,128,131,288,9,352,244,159,316,363,59,14,204,97,45,350,240,117,298,192,299,189,360,245,85,72,276,6,167,10,202,217,154,137,37,81,300,227,26,353,253,3],[25,9,5,28,17,13,11,3,21,8,11,15,9,18,1,8,12,29,28,14,23,7,14,16,28,27,25,11,26,8,26,2,26,13,3,6,16,10,21,5,3,17,6,22,27,15,26,19,10,3],[4,2,1,3,5,6,4,5,2,6,2,5,6,6,3,2,5,3,7,4,5,3,7,4,6,2,1,7,2,4,7,4,5,6,7,3,3,7,3,4,4,1,6,1,3,7,2,7,5,7]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>date<\/th>\n      <th>births<\/th>\n      <th>wday<\/th>\n      <th>year<\/th>\n      <th>month<\/th>\n      <th>day_of_year<\/th>\n      <th>day_of_month<\/th>\n      <th>day_of_week<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,4,5,6,7,8]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<ol type="1">
+<li>Scroll through the table and try to make some meaning of the numbers. (Hint: It’s hard.)</li>
+</ol>
+<p>In statistics you’ll learn about different ways of displaying and summarizing data that makes it easier to see information. Here’s one simple display of just the second column from the data, the number of births each day.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="first-day_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
+</div>
+<p>It’s easy to see some interesting things from the graphic than from the table, but hard to see others. For instance, the table makes it clear that our data cover only 100 days. But you would be hard pressed to figure this out from the graph above.</p>
+<ol start="2" type="1">
+<li>There are some clear patterns shown by the graphic about day-to-day variation in the number of births. Give two examples of such patterns.</li>
+</ol>
+<p>As I said before, in this statistics class you’re going to learn some techniques for making sense of data. Using a graph like the above is one such technique. But we can improve on it by using other techniques.</p>
+<p>One is called <em>jittering</em>, which randomly moves the dots a small amount horizontally so that you can more easily see how many there are. Another technique is to make the dots somewhat <em>transparent</em>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="first-day_files/figure-html5/unnamed-chunk-4-1.png" width="624" /></p>
+</div>
+<ol start="3" type="1">
+<li>What does this new graph show that you couldn’t see clearly in the previous graph?</li>
+</ol>
+<p>Making sense of data requires that we connect it in some what to what we are interested in finding out.</p>
+<p>Perhaps an obvious question raised by these data is: Why are there lots of days with about 12,000 births, and quite a lot with about 8,000 births, but none around 10,000 births?</p>
+<ol start="4" type="1">
+<li>Think of a real-world explanation for the <em>bi-modality</em> of the data.</li>
+</ol>
+<p>[I’ll skip the discussion intended to lead students to suspect that there’s another factor involved. Perhaps there is a reduction of births in Fall to prepare for winter.]</p>
+<p>It’s often the case that we seek to explain the variation in one variable by using another variable. A first step is to put that other variable, the <em>explanatory variable</em>, on the graph. We’ll put it on the X axis, leaving the Y axis to represent the quantity we’re trying to explain, which we call the <em>response variable</em>.</p>
+<p>Time of year is an obvious explanatory variable, so let’s introduce that into our graph.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="first-day_files/figure-html5/unnamed-chunk-5-1.png" width="624" /></p>
+</div>
+<h2 id="a-tool-for-exploring-data">A tool for exploring data</h2>
+<p>Making sense of data often involves a cycle:</p>
+<ol type="a">
+<li>Look at the data in some way that you think might be informative.</li>
+<li>Consider the <em>pattern</em> shown by the data and figure out what makes sense and what remains mysterious to you.</li>
+<li>Think about what might explain or illuminate the mystery.</li>
+<li>Figure out how you might display the data in order to produce a better explanation. Then, back to (a).</li>
+</ol>
+<p>The description of the cycle uses only everyday words. But there will be a lot to learn. For instance:</p>
+<ul>
+<li>What do we mean by “<em>pattern in the data</em>”?</li>
+<li>How can we know if a given pattern explains a lot about the data or just a little?</li>
+<li>How do we avoid reading a pattern into data that really isn’t there? What does it mean to say, “really isn’t there?”</li>
+</ul>
+<p>You’re going to be working with a tool for displaying data and patterns that will let you explore data as you think best. The tool is oriented around <em>learning statistics</em> so it includes features to explore some basic questions:</p>
+<ul>
+<li>What would happen if <em>more data</em> were available? How much data do we need to see a pattern clearly?</li>
+<li>Suppose there were no actual pattern in the data. Could we be tricked into seeing a pattern that isn’t there?</li>
+</ul>
+<p>The tool is called a “Little App.” You run it in an ordinary web browser, just by going to <a href="https://maa-statprep.shinyapps.io/Little_App_Regression/">this site</a>.</p>
+<p>I’m going to show you how it works and then you’ll be all set up to use it.</p>
+<ol type="1">
+<li>Starts with a splash page of instructions and explanations. You should read these. I’m going to be summarizing it now, so we’ll just dismiss the splash page by clicking outside it.</li>
+<li>We start on a tab called “Data.” This is where you choose a source of data and the variables you want to look at. For fun, the data set and the variables are selected at random at first, but you choose the ones you want.</li>
+<li>Since the amount of data is an important consideration in statistics, there’s a control to let you look at just a little data or a lot of data.</li>
+<li>The graphic always shows both the data <em>and</em> a <em>pattern</em>. You have some control over the type of pattern that’s being displayed. We’ll learn more about this later.</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="first-day_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
+</div>
+<ol start="5" type="1">
+<li>Is there something about this graphic that <em>explains</em> the bi-modality we saw in the previous graphics?</li>
+</ol>
+<p>[More discussion. Seem obvious that weekends are different from weekday. Less obvious that Sunday and Saturday are different, or that the individual working weekdays are different from one another.]</p>
+<p>Let’s compare Monday through Friday. Here’s the graph, redrawn to exclude the weekends.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="first-day_files/figure-html5/unnamed-chunk-7-1.png" width="624" /></p>
+</div>
+<ol start="6" type="1">
+<li>What do you think: are the weekdays different from one another?</li>
+</ol>
+<p>[Discussion. What if the outlier on Friday had happened on Thursday, etc.]</p>
+<p>Reasonable people can disagree about whether there is a day-to-day pattern in the data. Is seeing differences like seeing animal shapes in clouds. (Hint: Clouds aren’t really animals!) Or is there something we can put our finger on. Said another way: How would you and a person with the opposite opinion try to convince one another? What would cause you to give up your opinion?</p>
+<p>Many tasks in statistics are about not having to rely entirely on personal judgement about whether there is a real pattern. The techniques by which these tasks are accomplished have been worked out over the last century, and are used almost universally in science, commerce, government and any other setting where data is used to draw conclusions.</p>
+<p>We’re going to work through one of the most widely used such techniques, explaining it with reference to a graphic rather than with mathematical algorithms. (We can leave it to the computer to carry out the algorithm precisely, but you’ll see that you get more or less the same answer just by looking at the graph.)</p>
+<p>Here are the steps.</p>
+<p><strong>Step 1</strong>. On the graph, draw a mathematical function that takes day-of-week as the input and puts out a single number which is representative of the data for that day of the week.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p>Question: You might disagree about the precise position of the bars showing the function output for each day. What would you look for in a “good” position? It happens that statistics has techniques for deciding where to draw the bars that, like the overall method, are universally used.</p>
+<p><strong>Step 2</strong>. Measure how much variation in the response variable there is.</p>
+<p>[This is where we introduce summary intervals and variance.]</p>
+<p><strong>Step 3</strong>. Imagine that each of the actual values in the response variable was replaced by the corresponding model value. That is, imagine what a graph of blue dots would look like if each black dot were moved horizontally down to the corresponding function output value. [An effective way to show this is with one of the StatPREP Little Apps: <a href="https://dtkaplan.shinyapps.io/LA_linear_regression/">here</a>]. Measure how much variation there is among the blue dots.</p>
+<p>The result of Step 3 is the amount of variation that’s <em>explained</em> by the model.</p>
+<p>In understanding Steps 2 and 3, it can help to make a graph on the side, showing the vertical spread of the response variable and of the model values, like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p>[Discussion about the blue dots, the meaning of the bars shown in the right graphic, how to calculate the variance, etc.]</p>
+<p><strong>Step 4</strong>. Now to do some calculations. The quantity we are going to calculate is called F, named after its inventor, Ronald Fisher. He invented it in 1925, an invention that marked the start of the pre-computer modern era in statistics.</p>
+<p>We have some numbers:</p>
+<ul>
+<li>$n=$50</li>
+<li>Variance of the response variable: <span class="math inline">\(v_r\)</span> = <code>fr round(var(Weekdays$births), -3)</code></li>
+<li>Variance of the model values: <span class="math inline">\(v_m\)</span> = <code>fr round(var(fitted(mod)), -3)</code></li>
+</ul>
+<p>In terms of these numbers, F is</p>
+<p><span class="math display">\[\mbox{F} = \frac{n-5}{4}\frac{v_m}{v_r - v_m}\]</span> You would be right to wonder where this formula comes from. What are the 4 and the 5 about? Will it always be 4 and 5 or does it depend on something in the specific situation? Why do we use variance instead of its square root. Why <span class="math inline">\(n-1\)</span> and not <span class="math inline">\(n\)</span>. Why not just use <span class="math inline">\(v_m / v_r\)</span> to simplify things? There are answers to all these questions, those will be clearer when we have the concepts to describe precisely what we mean by a “real” or an “accidental” pattern.</p>
+<p>Still, notice that F is bigger:</p>
+<ul>
+<li>When <span class="math inline">\(n\)</span> is bigger. That is, more data gives bigger F.</li>
+<li>When <span class="math inline">\(v_m\)</span> is bigger. That is, a model that explains more of the variation gives bigger F.</li>
+</ul>
+<p>Plugging in our numbers here:</p>
+<p><span class="math display">\[\mbox{F} = (\frac{50 - 5}{4}) \frac{177000}{398000  - 177000} = 7.8\]</span></p>
+<p>The standard in science is that F &gt; 4 means that you’re entitled to claim that the data point to a day-to-day difference in birth numbers.</p>
+<p>Why 4? Again, we’ll be able to see why 4 was selected as the threshold when we understand precisely what is the difference between a “real” and “accidental” pattern.</p>
+<p><strong>Another example.</strong> [I would interleaf examples stage by stage, leaving the “is the pattern accidental?” question toward the end.]</p>
+<p>There’s an urban legend that pregnant women who are older are more likely to have conceived a boy than younger women. [Notice the conditioning in this statement. It’s only about pregnant women.]</p>
+<p>Let’s go to the data. We’ll use the Centers for Disease Control data on individual births. Here, we have $n=$4,000,000 so we can anticipate that F is likely to be large. But so that you can see the individual dots in the graph, we’ll use a sample of just 1000 births selected at random. Once you feel comfortable with the idea of a function describing the relationship between the response and explanatory variables, we’ll work with larger datasets.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="first-day_files/figure-html5/unnamed-chunk-10-1.png" width="624" /></p>
+</div>
+<p>That’s not a very good graph. Let’s use jittering and transparency?</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="first-day_files/figure-html5/unnamed-chunk-11-1.png" width="624" /></p>
+</div>
+<p>First … there’s nothing obvious. But let’s go through the formalities of the steps to find F. [Discussion about how to draw function and what the output should be.]</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>The Centers for Disease Control publishes data on each of the roughly 4,000,000 births that happen in the US each year. We’ll look at that data later in the course. It’s very detailed, and for privacy reasons they only tell you the month of birth, not the day of the month. But before they implemented that privacy policy, you could find the actual day for each birth. The data we have are from 2015.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -1671,6 +1119,15 @@ function init_posts_list() {
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->

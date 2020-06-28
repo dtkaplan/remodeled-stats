@@ -12,21 +12,36 @@
     "date": "2020-06-29",
     "categories": [],
     "preview": "posts/2020-06-22-ASA-AMATYC/births78.png",
-    "last_modified": "2020-06-23T08:27:33-05:00"
+    "last_modified": "2020-06-27T13:28:29-05:00"
   },
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to My Blog",
-    "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
+    "path": "posts/2020-06-28-inferencewithf/",
+    "title": "Statistical inference: Is there a discernible pattern?",
+    "description": "The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell's drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]",
     "author": [
       {
         "name": "Daniel Kaplan",
-        "url": "dtkaplan.github.io"
+        "url": "https://dtkaplan.github.io"
       }
     ],
-    "date": "2020-06-22",
+    "date": "2020-01-19",
     "categories": [],
-    "preview": "https://rstudio.github.io/distill/images/javascript-d3-preview.png",
-    "last_modified": "2020-06-26T13:01:45-05:00"
+    "preview": "posts/2020-06-28-inferencewithf/Solomon_Valley_Democrat_Thu__Oct_27__1898_.jpg",
+    "last_modified": "2020-06-28T08:19:04-05:00"
+  },
+  {
+    "path": "posts/2020-01-18-first-day/",
+    "title": "A First-day Challenge",
+    "description": "Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we'll re-use Randy's challenge to organize a first-day class on the question \"What is statistics?\"",
+    "author": [
+      {
+        "name": "Daniel Kaplan",
+        "url": "https://dtkaplan.github.io"
+      }
+    ],
+    "date": "2020-01-18",
+    "categories": [],
+    "preview": "posts/2020-01-18-first-day/daily-births.png",
+    "last_modified": "2020-06-28T07:54:36-05:00"
   }
 ]

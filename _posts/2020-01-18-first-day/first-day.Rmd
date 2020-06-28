@@ -1,0 +1,247 @@
+---
+title: "A First-day Challenge"
+description: |
+  Randall Pruim at Calvin College (Michigan) has a compelling first-day challenge for students: to uncover and understand a surprising pattern in day-by-day births. In this post, we'll re-use Randy's challenge to organize a first-day class on the question "What is statistics?"
+author:
+  - name: Daniel Kaplan
+    url: https://dtkaplan.github.io
+date: 01-18-2020
+output:
+  distill::distill_article:
+    self_contained: false
+preview: daily-births.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(mosaic)
+library(ggformula)
+library(mosaicData)
+library(LittleApp2)
+suppress_x_axis <- function(P) {
+  P %>%
+    gf_theme(axis.text.x = element_blank(),
+             axis.ticks.x = element_blank()) %>%
+    gf_labs(x = "")
+}
+```
+
+```{r eval = FALSE, echo=FALSE, results="hide"}
+# to make the preview graphic
+gf_point(births ~ date, data = Births,
+         size = 0.25) %>% 
+  gf_labs(x = "Date", y = "Number of births", title = "Daily births in the US") %>%
+  gf_theme(theme=theme_minimal)
+ggsave("daily-births.png")
+```
+
+## Welcome to Stats 101
+
+The main questions in stats are:
+
+* How do we inform ourselves from data?
+* How do we take care that we do not read something into data that isn't really there? 
+
+Let's start with some data on the number of births each day in the US.^[The Centers for Disease Control publishes data  on  each of the roughly 4,000,000 births that happen in  the US each year. We'll look at that data later in the course. It's very detailed, and for  privacy  reasons they only tell you the month of birth, not the day of the month. But before they implemented that privacy policy, you could find the actual day for each birth. The data we have are from 2015.]
+
+Here's what the data look like, shown in standard format for storing data, much like a spreadsheet. 
+
+```{r echo=FALSE}
+nbirths <- 50
+set.seed(101)
+Birth_counts <- Births2015 %>%
+  sample_n(size = nbirths)
+DT::datatable(Birth_counts)
+```
+
+1. Scroll through the table and  try to  make some meaning of the numbers. (Hint: It's hard.)
+
+In  statistics you'll learn  about different ways of displaying and summarizing data that makes it easier to see information.  Here's  one simple display of just the second  column from the data, the number of births each day. 
+
+```{r echo  = FALSE}
+gf_point(births ~ 1, data = Birth_counts) %>%
+gf_lims(x = c(0,2)) %>%
+  suppress_x_axis()
+  
+```
+
+It's easy to  see some interesting things from the graphic than from the table, but hard to see others. For instance,  the table makes it clear that our data cover only 100 days. But you  would be hard pressed to figure this out from the graph above.
+
+2. There are some clear patterns shown by the graphic about day-to-day variation in the number of births. Give two examples of such patterns.
+
+As I said before, in this statistics class you're going to learn some techniques for making  sense of data. Using a graph like the above is one such technique. But we can improve on it by using other techniques. 
+
+One is called *jittering*, which randomly moves the dots a small amount horizontally so that you can more easily see how many there are. Another technique is to make the dots somewhat *transparent*.
+
+
+```{r echo=FALSE}
+gf_jitter(births ~ 1,  data = Birth_counts, 
+          height = 0, alpha = 0.5, width = 0.1) %>%
+  gf_lims(x = c(0, 2)) %>%
+  suppress_x_axis()
+```
+
+3. What does this new graph show that you couldn't see clearly in the  previous graph?
+
+Making sense of data requires that we connect it in some what to what we are interested in finding out. 
+
+Perhaps an obvious question raised by these data is: Why are there lots of days with about 12,000 births, and quite a lot with about 8,000 births, but none around 10,000 births?
+
+4. Think of a real-world explanation for the *bi-modality* of the data.
+
+[I'll skip the discussion intended to lead students to suspect that there's another factor involved. Perhaps there is a reduction of births in Fall to prepare for winter.]
+
+It's often the case that we seek to explain the variation  in one variable by using another variable. A first step is to put that other variable, the *explanatory variable*, on the graph. We'll put it on the X axis, leaving the Y axis to represent the quantity we're trying to explain, which we call the *response variable*.
+
+Time of year is an obvious explanatory variable, so let's introduce that into our graph.
+
+```{r echo=FALSE}
+res <- LittleApp2::F_main_calc(births ~ splines::ns(date,4), data = Births2015)
+res$main
+```
+
+## A tool for exploring data
+
+Making sense of data often involves a cycle:
+
+a. Look at the data in some way that you think might be informative.
+b. Consider the *pattern* shown by the data and figure out what makes sense and what remains mysterious to you.
+c. Think about what might explain or illuminate the mystery.
+d. Figure out how you might display the data in order to produce a better explanation. Then, back to (a).
+
+The description of the cycle uses only everyday words. But there will be a lot to learn. For instance:
+
+- What do we mean by "*pattern in the data*"?
+- How can we know if a given pattern explains a lot about the data or just a little?
+- How do we avoid reading a pattern into data that really isn't there? What does it mean to say, "really isn't there?"
+
+You're going to be working with a tool for displaying data and patterns that will let you explore data as you think best. The tool is oriented around *learning statistics* so it includes features to explore some basic questions:
+
+* What would happen if *more data* were available? How much data do we need to see a pattern clearly?
+* Suppose there were no actual pattern in the data. Could we be tricked into seeing a pattern that isn't there? 
+
+The tool is called a "Little App." You run it in an ordinary web browser, just by going to [this site](https://maa-statprep.shinyapps.io/Little_App_Regression/).
+
+I'm going to show you how it works and then you'll be all set up to use it.
+
+1. Starts with a splash page of instructions and explanations. You should read these. I'm going to be summarizing it now, so we'll just dismiss the splash page by clicking outside it.
+2. We start on a tab called "Data." This is where you choose a source of data and the variables you want to look at. For fun, the data set and the variables are selected at random at first, but you choose the ones you want.
+3. Since the amount of data is an important consideration in statistics, there's a control to let you look at just a little data or a lot of data.
+4. The graphic always shows both the data *and* a *pattern*. You have some control over the type of pattern that's being displayed. We'll learn more about this later.
+
+```{r echo=FALSE}
+gf_jitter(births ~ wday,  data = Birth_counts, 
+          height = 0, alpha = 0.5, width = 0.1) 
+```
+
+5. Is there something about this graphic that *explains* the bi-modality we saw in the previous graphics?
+
+[More discussion. Seem obvious that weekends are different from weekday. Less obvious that Sunday and Saturday are different, or that the individual working weekdays are different from one another.]
+
+Let's compare Monday through Friday. Here's the graph, redrawn to exclude the weekends.
+
+```{r echo=FALSE}
+Weekdays <- Birth_counts %>%
+  filter( ! wday %in% c("Sat", "Sun")) 
+gf_jitter(births ~ wday,  data = Weekdays, 
+          height = 0, alpha = 0.5, width = 0.1)  
+
+```
+
+6. What do you think: are the weekdays different from one another?
+
+[Discussion. What if the outlier on Friday had happened on  Thursday, etc.]
+
+Reasonable people can disagree about whether there is a day-to-day pattern in the data. Is seeing differences like seeing animal shapes in clouds. (Hint: Clouds aren't really animals!) Or is there something we can put our finger on. Said another way: How would you and a person with the opposite opinion try to convince one another? What would cause  you to give up your opinion?
+
+Many tasks in statistics are about not having to rely entirely on personal judgement about whether there is a real pattern. The techniques by which  these tasks are accomplished have been worked out over the last century, and are used almost universally in science, commerce, government and any other setting where data is used to draw conclusions. 
+
+We're going to work through one of the most widely used such techniques, explaining it with reference  to  a  graphic rather than with mathematical algorithms. (We can leave it  to the computer to carry out the algorithm precisely, but you'll see that you get more or less the same answer just by looking at the graph.)
+
+Here are the steps.
+
+**Step 1**. On the graph, draw a mathematical function that takes day-of-week as the input and puts out a single number which is representative of the data for that day of the week.
+
+```{r echo=FALSE}
+# mod <- lm(births ~ wday, data = Weekdays)
+# res <- make_model_plots(births ~ wday, data = Weekdays)
+# res$P1
+```
+
+Question:  You might disagree about the precise position of the bars showing the function output for each day. What would you  look for in a "good" position? It happens that statistics has techniques for deciding where to draw the bars that, like the overall method, are universally used.
+
+**Step 2**. Measure how much variation  in the response variable there is.
+
+[This is where we introduce summary intervals and variance.]
+
+**Step 3**. Imagine that each of the actual values in the response variable was replaced by the corresponding model value.  That is, imagine what a graph of blue dots would look like if each black dot were  moved horizontally down to  the  corresponding function output value.  [An effective way to show this is with one of the StatPREP Little Apps: [here](https://dtkaplan.shinyapps.io/LA_linear_regression/)]. Measure how much variation there is among the blue dots.
+
+The result of Step 3 is the amount of variation that's *explained* by the model.
+
+In understanding Steps 2 and 3, it can help to make a graph on  the side, showing the vertical spread of the response variable and of the model values, like this:
+
+```{r echo=FALSE}
+# gridExtra::grid.arrange(res$P1, res$P2$P,
+#                                nrow = 1, 
+#                                widths = c(3, 1))
+```
+
+[Discussion about the blue dots, the meaning of the bars shown in the right graphic, how to calculate the variance, etc.]
+
+**Step 4**. Now to do some calculations. The quantity we are going to calculate is called F, named after its inventor, Ronald Fisher. He invented it in 1925, an invention that marked the start of the pre-computer modern era in statistics.
+
+We have some numbers:
+
+- $n=$`r nbirths`
+- Variance of the response variable: $v_r$ = `fr round(var(Weekdays$births), -3)`
+- Variance of the model values: $v_m$ = `fr round(var(fitted(mod)), -3)`
+
+In terms of these numbers, F  is
+
+$$\mbox{F} = \frac{n-5}{4}\frac{v_m}{v_r - v_m}$$
+You would be right to wonder where this formula comes from. What are the 4 and the 5 about? Will it always be 4 and 5 or does it depend on something in the specific situation? Why do we use variance instead of its square root. Why  $n-1$ and not  $n$. Why not just use $v_m / v_r$ to simplify things? There  are answers to all  these questions, those will be clearer when we have the concepts to describe precisely what we mean by  a "real"  or an  "accidental" pattern.
+
+Still,  notice that F is bigger:
+
+- When $n$ is bigger. That is, more data gives bigger F.
+- When $v_m$ is bigger. That is, a model that explains more of the variation gives bigger F.
+
+Plugging in our numbers here:
+
+$$\mbox{F} = (\frac{50 - 5}{4}) \frac{177000}{398000  - 177000} = 7.8$$
+
+The standard in  science  is that  F > 4 means that you're entitled to claim that the data point to a day-to-day difference in birth numbers.
+
+Why 4? Again, we'll be able to see why 4 was selected as the threshold when we understand precisely what is the difference between a "real" and "accidental" pattern.
+
+**Another example.** [I would interleaf examples stage by stage, leaving the "is the  pattern accidental?" question toward the end.]
+
+There's an urban legend that pregnant women who are older are more likely to have conceived a boy than younger women. [Notice the conditioning in this statement. It's only about pregnant women.] 
+
+`r nbabies <- 1000`
+
+Let's go to the data. We'll use the Centers for Disease Control data on individual births. Here, we have $n=$4,000,000 so we can anticipate that F is likely to  be large. But so  that  you can see the individual dots in the graph, we'll use a sample of  just `r nbabies` births selected at random.  Once you feel comfortable with the idea of a function describing the relationship between the response and explanatory variables, we'll work with larger datasets.
+
+```{r}
+set.seed(101)
+Babies <- natality2014::Natality_2014_10k %>% 
+  sample_n(size = 2*nbabies) %>%
+  dplyr::select(mager,  sex, fagecomb) %>%
+  mutate(sex = factor(sex)) %>%
+  na.omit() %>%
+  sample_n(size = nbabies)
+gf_point(sex ~ mager,  data = Babies)
+```
+
+That's not a very good graph. Let's use jittering and transparency?
+
+```{r echo=FALSE}
+gf_jitter(sex ~ mager,  data = Babies,
+         height  = 0.1,  width = 0.5, alpha = 0.5) 
+```
+
+First ... there's nothing obvious. But let's go through the formalities  of the steps to  find F. [Discussion about how to draw function and what the output should be.]
+
+
+
+
