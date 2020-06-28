@@ -167,14 +167,40 @@ Note that there are closely related tools
 
     > But for those of you who need to deal with tomorrow before moving on to something brand new ... I'll directly you to a set of tools, closely related to the one I'm going to show, that are designed around existing topics in the canonical curriculum, e.g. distributions, t-tests.
     
-## A first day of class
+## A tool for exploring data
 
+Making sense of data often involves a cycle:
 
+a. Look at the data in some way that you think might be informative.
+b. Consider the *pattern* shown by the data and figure out what makes sense and what remains mysterious to you.
+c. Think about what might explain or illuminate the mystery.
+d. Figure out how you might display the data in order to produce a better explanation. Then, back to (a).
 
-## It's all really one method. Let's work with that.
+The description of the cycle uses only everyday words. But there will be a lot to learn. For instance:
 
+- What do we mean by "*pattern in the data*"?
+- How can we know if a given pattern explains a lot about the data or just a little?
+- How do we avoid reading a pattern into data that really isn't there? What does it mean to say, "really isn't there?"
 
+You're going to be working with a tool for displaying data and patterns that will let you explore data as you think best. The tool is oriented around *learning statistics* so it includes features to explore some basic questions:
 
+* What would happen if *more data* were available? How much data do we need to see a pattern clearly?
+* Suppose there were no actual pattern in the data. Could we be tricked into seeing a pattern that isn't there? 
 
-[Regression Little App](https://maa-statprep.shinyapps.io/Little_App_Regression/). I'll explain the "Little App" business in a little bit.
+The tool is called a "Little App." You run it in an ordinary web browser, just by going to [this site](https://maa-statprep.shinyapps.io/Little_App_Regression/).
 
+I'm going to show you how it works and then you'll be all set up to use it.
+
+1. Starts with a splash page of instructions and explanations. You should read these. I'm going to be summarizing it now, so we'll just dismiss the splash page by clicking outside it.
+2. We start on a tab called "Data." This is where you choose a source of data and the variables you want to look at. For fun, the data set and the variables are selected at random at first, but you choose the ones you want.
+3. Since the amount of data is an important consideration in statistics, there's a control to let you look at just a little data or a lot of data.
+4. The graphic always shows both the data *and* a *pattern*. You have some control over the type of pattern that's being displayed. We'll learn more about this later.
+
+## Part II: One method for everything
+
+[Follow this link](../2020-06-28-inferencewithf/inferencewithf.html).
+
+## Summing up
+
+- A more complete explanation of the F method is given in the [Compact Guide to Classical Inference](https://dtkaplan.github.io/CompactInference).
+- More Little Apps are available [here](https://statprep.github.io/LittleAppSite/).

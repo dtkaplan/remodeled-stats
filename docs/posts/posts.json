@@ -12,12 +12,12 @@
     "date": "2020-06-29",
     "categories": [],
     "preview": "posts/2020-06-22-ASA-AMATYC/births78.png",
-    "last_modified": "2020-06-27T13:28:29-05:00"
+    "last_modified": "2020-06-28T18:23:48-05:00"
   },
   {
     "path": "posts/2020-06-28-inferencewithf/",
     "title": "Statistical inference: Is there a discernible pattern?",
-    "description": "The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell's drawing of the canals of Mars, as he observed in the 1890s using telescopes (but before the advent of astronomical photography).]",
+    "description": "The method of regression is always capable of finding a pattern in a given data set. But is the pattern it finds genuinely discernible or is it an illusion of accidental alignment? [The image is astronomer Percival Lowell's drawing of the canals of Mars, as he observed in the 1890s using telescopes he financed before the advent of astronomical photography.]",
     "author": [
       {
         "name": "Daniel Kaplan",
@@ -27,7 +27,7 @@
     "date": "2020-01-19",
     "categories": [],
     "preview": "posts/2020-06-28-inferencewithf/Solomon_Valley_Democrat_Thu__Oct_27__1898_.jpg",
-    "last_modified": "2020-06-28T08:19:04-05:00"
+    "last_modified": "2020-06-28T18:25:55-05:00"
   },
   {
     "path": "posts/2020-01-18-first-day/",
@@ -42,6 +42,6 @@
     "date": "2020-01-18",
     "categories": [],
     "preview": "posts/2020-01-18-first-day/daily-births.png",
-    "last_modified": "2020-06-28T07:54:36-05:00"
+    "last_modified": "2020-06-28T18:25:40-05:00"
   }
 ]
