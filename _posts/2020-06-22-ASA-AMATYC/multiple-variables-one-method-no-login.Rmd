@@ -22,9 +22,19 @@ knitr::opts_chunk$set(echo = FALSE)
    - Remains somewhat stable across time.
    - Differences (between regions) stable across time.
     
-2. Value of using randomness.
+2. Value of using randomness. 1920s
     * In controlled experiment, random assignment
     * In studying things of too great extent to observe in whole, observe a random sample
+
+```{r echo=FALSE, out.width="40%", fig.align="center"}
+knitr::include_graphics("lancet1.png")
+```
+
+```{r echo=FALSE, out.width="40%", fig.align="center"} 
+knitr::include_graphics("lancet2.png")
+```
+
+*A 1937 editorial from a leading medical journal, then and today. The editorial is an opening shot in the still ongoing struggle to more from *eminence*-based medicine to *evidence*-based medicine.*
 
 ## The canonical curriculum
 
@@ -61,7 +71,7 @@ My methodology to demonstrate the objection is mistaken:
 
 - Do we teach about training versus testing data?
 - Do we teach about correcting for multiple comparisons or researcher degrees of freedom?
-- Do we teach about modern data graphics?Instead, histograms, box-and-whisker plots, even stem-plots.
+- Do we teach about modern data graphics? Instead, histograms, box-and-whisker plots, even stem-plots.
 - Do we teach about modern pattern-discovery techniques, e.g. cladistics and trees?
 
 > b. How do we deal with confounding in exploring relationships?
@@ -79,7 +89,7 @@ My methodology to demonstrate the objection is mistaken:
 
 - Do we use a computer in our class?
 - Do we use mainstream software?
-- Do we teach about data frames and relational database operations?
+- Do we teach about data frames and relational operators? See, e.g. Rob Gould's "Data Moves" presentation in this workshop.
 
 ## A consensus for reform?
 
