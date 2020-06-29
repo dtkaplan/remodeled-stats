@@ -34,9 +34,10 @@ I'll boil it down to two central questions and the apparatus that lets us addres
 2. Are two quantitative variables connected?
 
 These two questions are sufficient to illustrate the two central ideas, e.g.
-    - Has the crime rate changed? 
-    - Are two regions different?
-    - Did the experimental intervention influence the outcome?
+
+- Has the crime rate changed? 
+- Are two regions different?
+- Did the experimental intervention influence the outcome?
     
 ## What's left out of the canonical curriculum
 
@@ -45,11 +46,13 @@ b. How do we deal with confounding in exploring relationships?
 c. How do we make predictions/classifications?
 d. How do we manage masses of data?
 
-These have become the central questions of the data-driven workplace.
+* These are central questions/skills of the data-driven workplace.*
 
-## *"You're wrong. Our courses do include those things."*
+## Possible objection
 
-This claim is mistaken.  My methodology to demonstrate this:
+*"I disagree. Our courses do include those things.*"
+
+My methodology to demonstrate the objection is mistaken:
 
 - Show simple and widely used techniques for addressing the four questions that are not even mentioned in the canon.
 - Show how we encourage students to abstain from addressing these questions.
@@ -65,7 +68,7 @@ This claim is mistaken.  My methodology to demonstrate this:
 
 - Do we teach about stratification?
 - Do we teach about statistical adjustment?
-- Don't we insist on the mantra "*correlation is not causation*"?
+- Don't we insist that only experiment can support causal claims? Do we distinguish sharply between a "statistical" relationship and a "causal" relationship? Can't statistics address causality?
 
 > c. How do we make predictions/classifications?
 
@@ -74,7 +77,7 @@ This claim is mistaken.  My methodology to demonstrate this:
 
 > d. How do we manage masses of data?
 
-- [Snidely.] Do we use a computer in our class?
+- Do we use a computer in our class?
 - Do we use mainstream software?
 - Do we teach about data frames and relational database operations?
 
@@ -82,13 +85,15 @@ This claim is mistaken.  My methodology to demonstrate this:
 
 The [GAISE College Report](https://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf) (2016) offers recommendations for change.
 
-Remarkably, I've never heard anyone object to the recommendations in GAISE. Is there a consensus?
+I've never heard anyone object to the recommendations in GAISE. 
+
+Is it then a consensus?
 
 ## The "post p < 0.05 world"
 
 This is more controversial, but it is hardly a fringe movement.
 
-Have you ever met an intro stats instructor who says, "I'm going to try moving p-values from the center of my course?"
+Have you ever met an intro stats instructor who says, "I'm going to try removing p-values from the center of my course?"
 
 ## Restating GAISE
 
@@ -120,8 +125,8 @@ i. Pedagogy
 And then the statistics-specific recommendations
 
 ii. About statistics
-    a. Statistics is fundamentally about making sense of data with an eye toward communicating to decision makers.
-    b. A century's experience has shown that real situations involve multiple variables and potential confounding, and statistical methods help deal with this complexity.
+    a. Statistics is fundamentally about making appropriate sense of data with an eye toward communicating with decision makers.
+    b. A century's experience has shown that real situations involve multiple variables and potential confounding, and multivariable statistical methods help deal with this complexity.
     c. Computing is central to statistics at many levels: acquiring and managing data, constructing mathematical representations ("models") that summarize data, displaying data and proposed summaries to inform decision makers.
 
 ## More boiled down still ...
@@ -191,10 +196,29 @@ The tool is called a "Little App." You run it in an ordinary web browser, just b
 
 I'm going to show you how it works and then you'll be all set up to use it.
 
-1. Starts with a splash page of instructions and explanations. You should read these. I'm going to be summarizing it now, so we'll just dismiss the splash page by clicking outside it.
+1. Opens with a splash page of instructions and explanations. You should read these. I'm going to be summarizing it now, so we'll just dismiss the splash page by clicking outside it.
+
+```{r echo=FALSE, fig.align="center", out.width="50%"}
+knitr::include_graphics("app-splash.png")
+```
 2. We start on a tab called "Data." This is where you choose a source of data and the variables you want to look at. For fun, the data set and the variables are selected at random at first, but you choose the ones you want.
+
+```{r echo=FALSE, fig.keep="hold", out.width="50%"}
+knitr::include_graphics("app-data.png")
+knitr::include_graphics("app-packages.png")
+```
+
 3. Since the amount of data is an important consideration in statistics, there's a control to let you look at just a little data or a lot of data.
-4. The graphic always shows both the data *and* a *pattern*. You have some control over the type of pattern that's being displayed. We'll learn more about this later.
+
+```{r echo=FALSE, fig.keep="hold", out.width="50%"}
+knitr::include_graphics("app-n-arrow.png")
+knitr::include_graphics("app-n.png")
+```
+
+4. The graphic always shows both the data *and* a *pattern*. You have some control over the type of pattern that's being displayed. 
+```{r echo=FALSE, fig.align="center", out.width="80%"}
+knitr::include_graphics("app-graphic.png")
+```
 
 ## Part II: One method for everything
 

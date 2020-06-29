@@ -49,7 +49,7 @@
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["births78.png","lancet1.png","lancet2.png","multiple-variables-one-method-no-login_files/bowser-1.9.3/bowser.min.js","multiple-variables-one-method-no-login_files/distill-2.2.21/template.v2.js","multiple-variables-one-method-no-login_files/header-attrs-2.2/header-attrs.js","multiple-variables-one-method-no-login_files/jquery-1.11.3/jquery.min.js","multiple-variables-one-method-no-login_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["app-data.png","app-graphic.png","app-n-arrow.png","app-n.png","app-packages.png","app-splash.png","births78.png","lancet1.png","lancet2.png","multiple-variables-one-method-no-login_files/bowser-1.9.3/bowser.min.js","multiple-variables-one-method-no-login_files/distill-2.2.21/template.v2.js","multiple-variables-one-method-no-login_files/header-attrs-2.2/header-attrs.js","multiple-variables-one-method-no-login_files/jquery-1.11.3/jquery.min.js","multiple-variables-one-method-no-login_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -983,7 +983,12 @@
 <li>Are two proportions/means different?</li>
 <li>Are two quantitative variables connected?</li>
 </ol>
-<p>These two questions are sufficient to illustrate the two central ideas, e.g. - Has the crime rate changed? - Are two regions different? - Did the experimental intervention influence the outcome?</p>
+<p>These two questions are sufficient to illustrate the two central ideas, e.g.</p>
+<ul>
+<li>Has the crime rate changed?</li>
+<li>Are two regions different?</li>
+<li>Did the experimental intervention influence the outcome?</li>
+</ul>
 <h2 id="whats-left-out-of-the-canonical-curriculum">What’s left out of the canonical curriculum</h2>
 <ol type="a">
 <li>How do we properly explore data to discover new patterns?</li>
@@ -991,9 +996,12 @@
 <li>How do we make predictions/classifications?</li>
 <li>How do we manage masses of data?</li>
 </ol>
-<p>These have become the central questions of the data-driven workplace.</p>
-<h2 id="youre-wrong.-our-courses-do-include-those-things."><em>“You’re wrong. Our courses do include those things.”</em></h2>
-<p>This claim is mistaken. My methodology to demonstrate this:</p>
+<ul>
+<li>These are central questions/skills of the data-driven workplace.*</li>
+</ul>
+<h2 id="possible-objection">Possible objection</h2>
+<p><em>"I disagree. Our courses do include those things.</em>"</p>
+<p>My methodology to demonstrate the objection is mistaken:</p>
 <ul>
 <li>Show simple and widely used techniques for addressing the four questions that are not even mentioned in the canon.</li>
 <li>Show how we encourage students to abstain from addressing these questions.</li>
@@ -1017,7 +1025,7 @@
 <ul>
 <li>Do we teach about stratification?</li>
 <li>Do we teach about statistical adjustment?</li>
-<li>Don’t we insist on the mantra “<em>correlation is not causation</em>”?</li>
+<li>Don’t we insist that only experiment can support causal claims? Do we distinguish sharply between a “statistical” relationship and a “causal” relationship? Can’t statistics address causality?</li>
 </ul>
 <blockquote>
 <ol start="3" type="a">
@@ -1034,16 +1042,17 @@
 </ol>
 </blockquote>
 <ul>
-<li>[Snidely.] Do we use a computer in our class?</li>
+<li>Do we use a computer in our class?</li>
 <li>Do we use mainstream software?</li>
 <li>Do we teach about data frames and relational database operations?</li>
 </ul>
 <h2 id="a-consensus-for-reform">A consensus for reform?</h2>
 <p>The <a href="https://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf">GAISE College Report</a> (2016) offers recommendations for change.</p>
-<p>Remarkably, I’ve never heard anyone object to the recommendations in GAISE. Is there a consensus?</p>
+<p>I’ve never heard anyone object to the recommendations in GAISE.</p>
+<p>Is it then a consensus?</p>
 <h2 id="the-post-p-0.05-world">The “post p &lt; 0.05 world”</h2>
 <p>This is more controversial, but it is hardly a fringe movement.</p>
-<p>Have you ever met an intro stats instructor who says, “I’m going to try moving p-values from the center of my course?”</p>
+<p>Have you ever met an intro stats instructor who says, “I’m going to try removing p-values from the center of my course?”</p>
 <h2 id="restating-gaise">Restating GAISE</h2>
 <p>Two of the co-authors of the GAISE report are among the speakers in this workshop: Allan Rossman and Jeffrey Witmer.</p>
 <p>I’m going to restate the GAISE recommendations in terms that I think make its direction more clear. Perhaps this represents my reading too much into the words of the report. Allan and Jeffrey can be good resources for pointing to ways that my direction diverges from GAISE.</p>
@@ -1074,8 +1083,8 @@
 <ol start="2" type="i">
 <li>About statistics
 <ol type="a">
-<li>Statistics is fundamentally about making sense of data with an eye toward communicating to decision makers.</li>
-<li>A century’s experience has shown that real situations involve multiple variables and potential confounding, and statistical methods help deal with this complexity.</li>
+<li>Statistics is fundamentally about making appropriate sense of data with an eye toward communicating with decision makers.</li>
+<li>A century’s experience has shown that real situations involve multiple variables and potential confounding, and multivariable statistical methods help deal with this complexity.</li>
 <li>Computing is central to statistics at many levels: acquiring and managing data, constructing mathematical representations (“models”) that summarize data, displaying data and proposed summaries to inform decision makers.</li>
 </ol></li>
 </ol>
@@ -1143,11 +1152,29 @@ What I want to say here (but with only six words for the whole title!) is
 <p>The tool is called a “Little App.” You run it in an ordinary web browser, just by going to <a href="https://maa-statprep.shinyapps.io/Little_App_Regression/">this site</a>.</p>
 <p>I’m going to show you how it works and then you’ll be all set up to use it.</p>
 <ol type="1">
-<li>Starts with a splash page of instructions and explanations. You should read these. I’m going to be summarizing it now, so we’ll just dismiss the splash page by clicking outside it.</li>
-<li>We start on a tab called “Data.” This is where you choose a source of data and the variables you want to look at. For fun, the data set and the variables are selected at random at first, but you choose the ones you want.</li>
-<li>Since the amount of data is an important consideration in statistics, there’s a control to let you look at just a little data or a lot of data.</li>
-<li>The graphic always shows both the data <em>and</em> a <em>pattern</em>. You have some control over the type of pattern that’s being displayed. We’ll learn more about this later.</li>
+<li>Opens with a splash page of instructions and explanations. You should read these. I’m going to be summarizing it now, so we’ll just dismiss the splash page by clicking outside it.</li>
 </ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="app-splash.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+<ol start="2" type="1">
+<li>We start on a tab called “Data.” This is where you choose a source of data and the variables you want to look at. For fun, the data set and the variables are selected at random at first, but you choose the ones you want.</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="app-data.png" width="50%" /><img src="app-packages.png" width="50%" /></p>
+</div>
+<ol start="3" type="1">
+<li>Since the amount of data is an important consideration in statistics, there’s a control to let you look at just a little data or a lot of data.</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="app-n-arrow.png" width="50%" /><img src="app-n.png" width="50%" /></p>
+</div>
+<ol start="4" type="1">
+<li>The graphic always shows both the data <em>and</em> a <em>pattern</em>. You have some control over the type of pattern that’s being displayed.
+<div class="layout-chunk" data-layout="l-body">
+<img src="app-graphic.png" width="80%" style="display: block; margin: auto;" /></li>
+</ol>
+</div>
 <h2 id="part-ii-one-method-for-everything">Part II: One method for everything</h2>
 <p><a href="https://dtkaplan.github.io/remodeled-stats/posts/2020-06-28-inferencewithf/">Follow this link</a>.</p>
 <h2 id="summing-up">Summing up</h2>
