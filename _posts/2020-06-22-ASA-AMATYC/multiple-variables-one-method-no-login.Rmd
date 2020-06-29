@@ -220,11 +220,21 @@ knitr::include_graphics("app-n.png")
 knitr::include_graphics("app-graphic.png")
 ```
 
+The *pattern* here is shown by the blue lines in the left panel, which show the mean number of sleep hours for the different types of homes: rental versus owner-occupied. In this case, the home-owners seem to get a tiny, little more sleep on average, but tools of statistical inference would show that the pattern seen in a different sample could well be different.
+
+The right panel is a tool for doing statistical inference, showing the variation in the number of sleep hours and the variation if all the data were condensed down to the appropriate blue line.
+
+
 ## Part II: One method for everything
 
 [Follow this link](https://dtkaplan.github.io/remodeled-stats/posts/2020-06-28-inferencewithf/).
 
 ## Summing up
 
+I'm recommending that we simply sidestep the many inferential methods presented in the canonical Stat 101.
+
+Instead, show one method that covers *all* the canonical inferential settings as well as multivariate settings.
+
+- Read [Jeff Witmer's editorial](https://www.tandfonline.com/doi/full/10.1080/10691898.2019.1702415) in the *Journal of Statistical Education*. It points to the utterly meaningless precision on which we waste so much time and effort in our classes. 
 - A more complete explanation of the F method is given in the [Compact Guide to Classical Inference](https://dtkaplan.github.io/CompactInference).
 - More Little Apps are available [here](https://statprep.github.io/LittleAppSite/).
